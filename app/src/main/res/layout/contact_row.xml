@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#66CCC2"
+        app:cardCornerRadius="11dp"
+        app:cardElevation="7dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:id="@+id/llRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="11dp">
+
+            <ImageView
+                android:id="@+id/imgContact"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="#66CCC2"
+                android:contentDescription="Contact Image"
+                tools:srcCompat="@drawable/d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginLeft="11dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnShare"
+                    android:text="Share"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
